@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // forEach() method is used to iterate over the elements of an array and 
+        // apply a specific function to each element 
+        // array.forEach(callback)
+        // element,index,array are required
+
+        let arr = [1,2,3,4,5]
+        arr.forEach(display)
+        function display(element){
+            console.log(element)
+        }
+
+        let numbers = [1,2,3,4,5]
+        numbers.forEach(double)
+        numbers.forEach(display)
+
+        function double(element,index,array){
+            array[index]=element*2
+        }
+
+        function display(element){
+            console.log(element)
+        }
+
+        let fruits = ['apple','orange','banana','mango']
+
+        // fruits.forEach(lowercase)
+        // fruits.forEach(upperCase)
+        fruits.forEach(capital)
+        fruits.forEach(display)
+
+        function lowercase(element,index,array){
+            array[index] = element.toLowerCase()
+        }
+
+        function upperCase(element,index,array){
+            array[index] = element.toUpperCase()
+        }
+
+        function capital(element,index,array){
+            array[index] = element.charAt(0).toUpperCase()+element.slice(1)
+        }
+
+        function display(elements){
+            console.log(elements)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.prnt{
+    background-color: lightgreen;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chd{
+    background-color: black;
+    color: tomato;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.parnt{
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.chld{
+    background-color: lightsalmon;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 30px;
+}

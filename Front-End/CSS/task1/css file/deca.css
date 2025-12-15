@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header elements */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    padding-top: 5px;
+}
+.header img{
+    padding-left: 20px;
+}
+.nav_link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 30px;
+}
+.search input{
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+    border-color: #bababa;
+}
+.nav_link a{
+    text-decoration: none;
+    color: black;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add img{
+    padding-top: 60px;
+    width: 90vw;
+}
+.trend1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.trend1 h3{
+    text-align: center;
+    font-weight: bold;
+}
+.trends{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 2px;
+    border: 1px solid #aeaeae28;
+    width: 200px;
+}
+.items .rate{
+    font-weight: bold;
+}
+.items .offer{
+    padding: 3px;
+    background-color: #ffbd2d;
+    width: 57px;
+    font-weight: 500;
+}
+.items button{
+    padding: 10px;
+    width: 195px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: white;
+    border-color: gray;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.butt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // .filter()  creates a new array by filtering out elements
+        let num = [1,2,3,4,5,6,7,8,9]
+        let evenNum = num.filter(even)
+        let oddNum = num.filter(odd)
+
+        function even(element){
+            return element % 2 === 0
+        }
+        console.log(evenNum)
+
+        function odd(element){
+            return element % 2 !== 0
+        }
+        console.log(oddNum)
+
+
+
+        const ages = [16,17,18,18,19,20,60]
+        let age = ages.filter(adult)
+
+        function adult(element){
+            return element >= 18
+        }
+        console.log(age)
+
+        const words = ['apple', 'orange', 'banana', 'kiwi', 'pomegranete', 'coconut']
+        const len = words.filter(wordLength)
+
+        function wordLength(element){
+            return element.length <= 6
+        }
+        console.log(len)
+
+    </script>
+</body>
+</html>

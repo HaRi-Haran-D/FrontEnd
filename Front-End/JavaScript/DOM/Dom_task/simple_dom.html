@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM</title>
+    <style>
+        #para{
+            font-size: 30px;
+            color:coral;
+            text-align: center;
+            margin-top: 20px;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+        }
+
+        .ctn{
+            text-align: center;
+        }
+
+        #btn{
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: rgb(212, 38, 102);
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        #bttn{
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: rgb(212, 38, 102);
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        #bun{
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: rgb(212, 38, 102);
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        #minus{
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: rgb(61, 192, 236);
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+
+        #plus{
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: rgb(61, 192, 236);
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Change the text of a paragraph when a button is clicked. -->
+    <p id="para">Hi Monkey D Luffy</p>
+    <div class="ctn">
+        <button id="btn">Click</button>
+    </div>
+
+    <!-- 2. Create a box and toggle its visibility using one button (hide/show). -->
+    <div id="box" style="display: flex; justify-content: center; align-items: center;">
+        <div style="width: 200px; height: 200px; background-color: lightgray; display: flex; justify-content: center; align-items: center; border-radius: 10px;">
+            box
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button id="bttn">Hide</button>
+    </div>
+
+    <!-- 3. Change background color of a div randomly when a button is pressed. -->
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <div id="color" style="width: 200px; height: 200px; background-color: lightgray; display: flex; justify-content: center; align-items: center; border-radius: 10px;">
+            Color box
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button id="bun">Change Color</button>
+    </div>
+
+    <!-- 4. On hover over an image, replace it with another image. -->
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <img id="img" src="../../../HTML/Onepiece/img/logo.png" alt="Image" style="width: 200px; height: 200px; border-radius: 10px;">
+    </div>
+
+    <!-- 5. Create a counter with + and - buttons to increase/decrease value in DOM. -->
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <button id="minus">-</button>
+        <span id="count" style="font-size: x-large; margin: auto 10px;">0</span>
+        <button id="plus">+</button>
+    </span>
+
+
+    <script src="simple_dom.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- 1. Create a form with name and email fields. Print entered values on console without reload. -->
+        <form action="" id="form">
+            <table>
+                <tr>
+                    <td>
+                        <input type ="text" id="name" placeholder="Name" required>
+                        <!-- <p id="paraname" style="color: red;"></p> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <!-- <p id="paramail" style="color: red;"></p> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+
+    <script>
+        const form = document.getElementById('form')
+
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault()
+
+            const name = document.getElementById('name').value
+            const email = document.getElementById('email').value
+
+            const storedata = localStorage.getItem('userdata')
+            const str = JSON.parse(storedata)
+
+            if(name === str.username && email === str.email){
+                alert('login Successful')
+                window.location.href='dom.html'
+            }
+            else{
+                alert('please tryagain')
+            }
+        })
+    </script>
+</body>
+</html>

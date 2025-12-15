@@ -1,0 +1,196 @@
+body {
+    margin: 0; font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #231942 0%, #5E548E 100%);
+    color: #fff;
+}
+header {
+    background: rgba(22, 22, 54, 0.97); 
+    padding: 1.5em 0;
+    box-shadow: 0 2px 4px rgba(35,25,66,0.4);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding-left: 5vw; 
+    padding-right: 5vw;
+}
+header h1 {
+    font-size: 2.5em; 
+    letter-spacing: 3px;
+    background: linear-gradient(90deg,#FFD700 40%,#5E548E 100%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+nav a {
+    color: #FFD700; 
+    text-decoration: none;
+    font-weight: 600; 
+    margin-left: 2em; 
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+    nav a:hover { 
+        color: #fff; 
+    }
+    .hero {
+        text-align: center; 
+        padding: 6em 2em 2em 2em;
+        background: 50% 60%/cover no-repeat;
+        box-shadow: 0 10px 50px #23194276;
+        position: relative; 
+        min-height: 320px;
+    }
+    .hero::after {
+        content: "";
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+        background: linear-gradient(120deg, #231942e7 20%, #5E548Eee 100%);
+        z-index: 0; 
+        pointer-events: none;
+    }
+    .hero > * { 
+        position: relative; 
+        z-index: 1; 
+    }
+    .hero h2 {
+        font-size: 3em; 
+         margin: 0 0 0.5em 0;
+        color: #FFD700; 
+        letter-spacing: 2px;
+        text-shadow: 2px 2px #231942bb;
+    }
+    .hero p {
+        font-size: 1.6em; 
+        font-weight: 400; 
+        color: #fff;
+        margin-bottom: 1em; 
+        text-shadow: 1px 1px #231942bb;
+    }
+    .cta {
+        background: #FFD700; 
+        color: #231942;
+        font-weight: bold; 
+        border: none; 
+        border-radius: 20px;
+        padding: 1em 2em; 
+        font-size: 1.3em; 
+        cursor: pointer;
+        transition: 0.2s;
+        box-shadow: 0px 2px 20px #ffd70088;
+        margin-top:0.5em;
+    }
+    .cta:hover { 
+        background: #FFA600; 
+    }
+    .section { 
+        max-width:1100px; 
+        margin: 3em auto 0 auto; 
+        padding: 2em 1em;
+    }
+#contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+  padding-bottom: 3em;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+#contact input[type="email"] {
+  width: 100%;
+  padding: 0.7em;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+#contact button.cta {
+  width: 100%;
+  padding: 1em 0;
+  border-radius: 25px;
+  font-size: 1.25em;
+  font-weight: bold;
+  cursor: pointer;
+  background: #FFD700;
+  color: #231942;
+  border: none;
+  box-shadow: 0 0 20px #ffd70088;
+  transition: background 0.2s;
+}
+
+#contact button.cta:hover {
+  background: #FFA600;
+}
+
+#contact p {
+  font-size: 1em;
+}
+
+#contact a {
+  color: #FFD700;
+  text-decoration: underline;
+}
+    .cards {
+        display: flex; 
+        justify-content: space-between; 
+        flex-wrap: wrap;
+        gap: 2em; 
+        margin-top: 2em;
+    }
+    .card {
+        background: rgba(52,34,102,0.92); 
+        border-radius: 18px; 
+        padding: 2em 1.2em; 
+        flex: 1 1 220px;
+        box-shadow: 0 2px 8px #23235444;
+        transition: transform 0.16s, box-shadow 0.16s;
+        text-align: center; 
+        margin:0;
+    }
+    .card:hover {
+        transform: translateY(-7px) scale(1.045);
+        box-shadow: 0 8px 22px #FFD70050;
+    }
+    .card h3 {
+        font-size: 1.4em; 
+        color:#FFD700; 
+        margin-top:0;
+    }
+    .card p { 
+        font-size: 1.05em;
+    }
+    .sidebar {
+        background: #5E548Eee; 
+        border-radius: 14px;
+        padding: 1.5em; 
+        margin-top:2em; 
+        font-size: 1.13em;
+        box-shadow:0 1px 10px #23194260; 
+        max-width:320px;
+    }
+    footer {
+        background: rgba(35,25,66,0.96);
+        padding:1em;
+        text-align:center;
+        color:#FFD700; 
+        font-size:1.1em;
+        margin-top:5em; 
+        border-top: 2px solid #FFD70012;
+    }
+    @media (max-width:800px) {
+        .cards{flex-direction:column;}
+        .sidebar{max-width:100%; margin-top:2em;}
+        .section{padding:1em;}
+        .hero{padding:4em 1em 1em 1em;}
+    }

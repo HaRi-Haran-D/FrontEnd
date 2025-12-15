@@ -1,0 +1,7 @@
+.fve span{
+    display: block;
+    color: brown;
+    background-color: lightgrey;
+    width: 20px;
+    height: 20px;
+}

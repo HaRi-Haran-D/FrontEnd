@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.prnt{
+    background-color: aquamarine;
+    color: blueviolet;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.chld{
+    display: flex;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px) {
+    .chld{
+        display: none;
+    }    
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Voting Eligibility: If age >= 18 -> 'Eligible to vote' else 'Not eligible'
+        let age = 10;
+        if (age>=18){
+            document.write("Eligible to vote" + " ")
+        }else
+        {
+            document.write("Not eligible" + " ")
+        }
+        
+        // Student Grade System: Marks >= 90 -> A, Marks >= 60 -> B, Else -> Fail.
+        let mark=90
+        if (mark >= 90)
+        {
+            document.write("You are A-Grade" + " ")
+        }
+        else if(mark>=60)
+        {
+            document.write("You are B-Grade" + " ")
+        }
+        else if(mark>= 35)
+        {
+            document.write("You are c-Grade" + " ")
+        }
+        else{
+            document.write("You are Fail" + " ")
+        }
+
+        // Login Validation: If username and password match -> 'Login Successful' else 'Login Failed'.
+        var username = true;
+        var password = false;
+        if(username == true && password == true){
+            document.write("Login Successfull" + " ")
+        }else
+        {
+            document.write("Login failed" + " ")
+        }
+
+        // Discount Eligibility: If age < 18 OR isStudent = true -> 'Discount Available' else 'No Discount'.
+        let ages = 19;
+        let isStudent = true;
+        if(ages<18 && isStudent===true)
+        {
+            document.write("Discount Available" + " ")
+        }
+        else{
+            document.write("No Discount" + " ")
+        }
+
+        //Bank Withdrawal: If balance >= withdrawAmount -> 'Transaction Successful' else 'Insufficient Balance'.
+        let balance = 100;
+        let withdrawAmount = 101;
+        if (balance <= withdrawAmount && withdrawAmount<=100)
+        {
+            document.write("Transaction Successful" + " ")
+        }
+        else
+        {
+            document.write("Insufficient Balance" + " ")
+        }
+
+        //Driving License Check: If age >= 18 -> 'License Approved' else 'Not Eligible'.
+        let person_age = 20;
+        let personId = true;
+        if(person_age>=18 && personId===true)
+        {
+            document.write("License Approved" + " ")
+        }
+        else{
+            document.write("Not Eligible" + " ")
+        }
+
+        //Ticket Pricing: If age <= 12 -> 'Child Ticket', else if age >= 60 -> 'Senior Ticket', else 'Adult Ticket'.
+        let Your_age = 50;
+        if(Your_age<=12)
+        {
+            document.write("Child Ticket")
+        }
+        else if(Your_age>=60)
+        {
+            document.write("Senior Ticket")
+        }
+        else{
+            document.write("Adult Ticket")
+        }
+
+        //Exam Result: If marks >= 90 -> 'Distinction', else if marks >= 75 -> 'First Class', else if marks >=35 -> 'Pass', else 'Fail'.
+        let marks = 80;
+        if(marks >= 90)
+        {
+            document.write("Distinction")
+        }
+        else if(marks >= 75)
+        {
+            document.write("First Class")
+        }
+        else if(marks >= 35)
+        {
+            document.write("Just Pass")
+        }
+        else{
+            document.write("Fail")
+        }
+
+        //Electricity Bill: If units <= 100 -> Rs. 2/unit, else if units <= 300 -> Rs. 5/unit, else Rs. 8/unit
+        let units = 250;
+        let two_per_unit = 2;
+        let five_per_unit = 5;
+        let egt_per_unit = 8;
+        if(units<=100)
+        {
+            document.write("Rs. 2/unit so total is", units*two_per_unit)
+        }
+        else if(units<=300)
+        {
+            document.write("Rs. 5/unit so total is", units*five_per_unit)
+        }
+        else
+        {
+            document.write("Rs. 8/unit so total is", units*egt_per_unit)
+        }
+
+        //Online Shopping: If cartAmount >= 500 -> 'Free Delivery' else 'Delivery Charges Apply'.
+        cart_amount = 400;
+        if(cart_amount >= 500)
+        {
+            document.write("Free Delivery")
+        }
+        else
+        {
+            document.write("Delivery Charges Apply")
+        }
+
+        //Largest of 3 Numbers: Use if-else if to find largest among three numbers.
+        let a = 40;
+        let b = 20;
+        let c = 30;
+
+        if(a>=b && a>=c)
+        {
+            document.writeln(a, "is larger");
+        }else if(b>=a && b>=c){
+            document.writeln(b, "is larger");
+        }else{
+            document.writeln(c, "is larger");
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let depart = {name:"BCA", student:"hari", strength:30}
+        // document.write(depart)
+        // document.write(depart.name)
+        // document.write(depart.student)
+        // document.write(depart.strength)
+
+        // let car = {brand:"BMW",model:"ML series",color:"black",make:2024}
+        // console.log(car.model)
+        // console.log(car.brand)
+        // console.log(car.color)
+
+        let audi = new Object()
+        audi.brand = "Audi"
+        audi.model="A7"
+        audi.color="Black"
+        audi.make="2025"
+
+        console.log(audi)
+
+        let car = audi
+        car.color="Red"
+        console.log(car) // it will change the color of both car and audi because both are pointing to the same memory location
+        
+        //to avoid this we can use
+        let carnew = {...audi}
+        // it will create a new object with the same properties as audi
+
+
+        // nested object
+        let college = {
+            name:"ABC College",
+            location:"Chennai",
+            dept:{
+                deptname:"BCA",
+                strength:30,
+                head:"Dr. Smith"
+            }
+        }
+
+
+    </script>
+</body>
+</html>

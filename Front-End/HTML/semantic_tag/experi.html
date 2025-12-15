@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>HTML</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML</h1>
+            <P>HTML (HyperText Markup Language) is the most basic building block of the Web. 
+            It defines the meaning and structure of web content.</P>
+            <a href="#seman">Sematic Tag</a> |
+            <a href="#inli">Inline Element</a> |
+            <a href="#bloc">Block Level Element</a> |
+            <a href="#img">Image Tag</a> |
+            <a href="#anch">Anchor Tag</a>
+        <header id="Seman">
+            <div>
+                <h2>Semantic Tags</h2>
+                    <p>A semantic tag in HTML is an element that clearly describes its meaning 
+                    to both the browser and the developer. Semantic tags make your code more 
+                    readable and improve accessibility and SEO.</p>
+            </div>
+            <div>
+                <h3>Examples of Semantic Tags</h3>
+                <table width="60%" border="1">
+                    <thead>
+                        <tr>
+                            <th>Tags</th>
+                            <th>Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Header Tag</td>
+                            <td>The header tag in HTML element represents introductory 
+                            content, typically a group of introductory or navigational 
+                            aids. It may contain some heading elements but also a logo, 
+                            a search form, an author name, and other elements.</td>
+                        </tr>
+                        <tr>
+                            <td>Article Tag</td>
+                            <td>The article tag in HTML element represents a self-contained 
+                            composition in a document, page, application, or site, which 
+                            is intended to be independently distributable or reusable</td>
+                        </tr>
+                        <tr>
+                            <td>Section Tag</td>
+                            <td>The section tag in HTML element represents a generic standalone 
+                            section of a document, which doesn't have a more specific semantic 
+                            element to represent it. Sections should always have a heading, 
+                            with very few exceptions.</td>
+                        </tr>
+                        <tr>
+                            <td>Nav Tag</td>
+                            <td>The nav HTML element represents a section of a page whose 
+                            purpose is to provide navigation links, either within the current 
+                            document or to other documents.</td>
+                        </tr>
+                        <tr>
+                            <td>Aside Tag</td>
+                            <td>The aside HTML element represents a portion of a document 
+                            whose content is only indirectly related to the document's main 
+                            content. Asides are frequently presented as sidebars or call-out 
+                            boxes.</td>
+                        </tr>
+                        <tr>
+                            <td>Main Tag</td>
+                            <td>The main tag in HTML element represents the dominant content 
+                            of the body of a document. The main content area consists of 
+                            content that is directly related to or expands upon the central 
+                            topic of a document, or the central functionality of an application.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Footer Tag</td>
+                            <td>The footer tag in HTML element represents a footer for its 
+                            nearest ancestor sectioning content or sectioning root element. 
+                            A footer tag is the typically contains information about the 
+                            author of the section, copyright data or links to related documents.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </header>
+            <article id="inli">
+                <div>
+                <h3>Inline level Elements</h3>
+                    <ul>
+                        <li>A block-level element always starts on a new line.</li>
+                        <li>It occupies the entire horizontal space of its parent element</li>
+                        <li>Vertical space equal to the height of its contents, thereby 
+                        creating a "block".</li>
+                <h4>Example:</h4>
+                        <ol type="i">
+                            <li>Structural elements:<b>&lt;header&gt;, &lt;footer&gt;, 
+                            &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, 
+                            &lt;main&gt; &gt;div&gt;.</b></li>
+                            <li>Text content elements: <b>&lt;p&gt;, &lt;h1&gt;</b>to <b>
+                            &lt;h6&gt;.</b></li>
+                            <li>List elements:<b>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, 
+                            &lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;.</b></li>
+                            <li>And some tags: <b>&lt;form&gt;, &lt;hr&gt;, &lt;table&gt;.</b></li>
+                        </ol>
+                    </ul>
+                </div>
+                <div>
+                <h3 id="bloc">Block level Elements</h3>
+                    <ol>
+                        <li>Inline elements in HTML are elements that do not begin on a new 
+                        line and only occupy the width necessary for their content.</li>
+                        <li>They are designed to flow within the existing line of text, 
+                        allowing other elements to appear on the same line if there is 
+                        sufficient space.</li>
+                        <li>It always start on a new line and take up the full available width.</li>
+                <h4>Example:</h4>
+                        <ul style="list-style-image: url('basic/Shades-01.PNG');">
+                            <li><b>&lt;a&gt;</b>: Defines a hyperlink.</li>
+                            <li><b>&lt;span&gt;</b>: A generic inline container for applying styles or 
+                            scripting to a specific part of text.</li>
+                            <li><b>&lt;strong&gt;</b> and <b>&lt;em&gt;</b>: Used for strong emphasis 
+                            and emphasized text, respectively.</li>
+                            <li><b>&lt;img&gt;</b>Embeds an image.</li>
+                            <li><b>&lt;input&gt;, &lt;label&gt;, &lt;button&gt;</b>:Common form elements.</li>
+                        </ul>
+                    </ol>
+                </div>
+            </article>
+            <aside id="img">
+                <h3>Image Tag</h3>
+                <p>The <b>&lt;img&gt;</b> HTML element embeds an image into the document.</p>
+                <img src="img/rocks.jpg" alt="Rocks pirate flag" width="100"  height="120" style="float: left; margin: 0px 20px 0px 5px;">
+                <h4>Attributes of Img Tag</h4>
+                <ul>
+                    <li>The <u>src</u> attribute holds the path to the image you want to embed.</li>
+                    <li><u>Alt</u> attribute is used to displayed text on the page if the image can't be 
+                        loaded for some reason. <br>
+                        for example, network errors, content blocking, or link rot.</li>
+                    <li>we can use both <u>width</u> and <u>height</u> to set the size of the image</li>
+                </ul>
+            </aside>
+            <nav id="anch">
+                <h3>Anchor Tag</h3>
+                <p>The HTML anchor tag, denoted by <a>, is used to create hyperlinks. These hyperlinks 
+                can link to other web pages, different sections within the same page</p>
+            </nav>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+.fst{
+    display: block;
+    background-color: red;
+}
+.snd{
+    display: block;
+    background-color: blue;
+}
+.trd{
+    display: inline;
+    background-color: red;
+}
+.fur{
+    display: inline;
+    background-color: blue;
+}
+.fve{
+    display: inline;
+    background-color: red;
+}
+.six{
+    display: inline;
+    background-color: blue;
+}

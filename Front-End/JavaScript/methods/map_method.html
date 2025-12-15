@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // .map() it accepts a callback and applies 
+        //        that function to each element of an array, 
+        //        then return a new array
+        const num = [1,2,3,4,5]
+        const sqr = num.map(square)
+        const cube = num.map(cubes)
+        function square(element){
+            return Math.pow(element,2)
+        }
+        console.log(sqr)
+
+        function cubes(element){
+            return Math.pow(element,3)
+        }
+        console.log(cube)
+
+
+        const name = ['HARI', 'JAI', 'YUVI', 'SAM']
+        const names = name.map(upper)
+        const named = name.map(lower)
+
+        function upper(element){
+            return element.toUpperCase()
+        }
+        console.log(names)
+
+        function lower(element){
+            return element.toLowerCase()
+        }
+        console.log(named)
+
+
+         const dates = ['2024-1-10','2025-2-20','2026-3-30']
+         const format = dates.map(formatdates)
+
+         function formatdates(element){
+            const parts = element.split("-")
+            return `${parts[1]}/${parts[2]}/${parts[0]}`
+         }
+         console.log(format)
+    </script>
+</body>
+</html>

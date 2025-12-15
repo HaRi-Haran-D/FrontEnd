@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.prnt1{
+    display: flex;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+}
+.chld1{
+    background-color: antiquewhite;
+    color: blue;
+    width: 200px;
+    
+}

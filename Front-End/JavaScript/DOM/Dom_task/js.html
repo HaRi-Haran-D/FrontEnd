@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Salary Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+    .top-earner {
+      background-color: #d4edda;
+      font-weight: bold;
+    }
+    .summary {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #eef;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Employee Salary Report</h2>
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Employee ID</th>
+        <th>Salary ($)</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="summary" id="summary"></div>
+
+  <script>
+    // 🔹 Step 1: Create an array of employee objects
+    const employees = [
+      { name: "Alice", employeeId: 101, salary: 72000 },
+      { name: "Bob", employeeId: 102, salary: 48000 },
+      { name: "Charlie", employeeId: 103, salary: 95000 },
+      { name: "David", employeeId: 104, salary: 53000 },
+      { name: "Eva", employeeId: 105, salary: 87000 },
+      { name: "Frank", employeeId: 106, salary: 42000 },
+    ];
+
+    // 🔹 Step 2: Filter employees earning above $50,000
+    const highEarners = employees.filter(emp => emp.salary > 50000);
+
+    // 🔹 Step 3: Calculate average salary
+    const totalSalary = employees.reduce((sum, emp) => sum + emp.salary, 0);
+    const averageSalary = (totalSalary / employees.length).toFixed(2);
+
+    // 🔹 Step 4: Sort employees by salary (descending)
+    const sortedEmployees = [...employees].sort((a, b) => b.salary - a.salary);
+
+    // 🔹 Step 5: Count above and below $50,000
+    const above50k = employees.filter(emp => emp.salary > 50000).length;
+    const below50k = employees.filter(emp => emp.salary <= 50000).length;
+
+    // 🔹 Step 6: Display employees in a table
+    const tbody = document.querySelector("#employeeTable tbody");
+    sortedEmployees.forEach(emp => {
+      const row = document.createElement("tr");
+      if (emp.salary > 80000) row.classList.add("top-earner");
+
+      row.innerHTML = `
+        <td>${emp.name}</td>
+        <td>${emp.employeeId}</td>
+        <td>$${emp.salary.toLocaleString()}</td>
+      `;
+      tbody.appendChild(row);
+    });
+
+    // 🔹 Step 7: Display summary
+    const summary = document.getElementById("summary");
+    summary.innerHTML = `
+      <p><strong>Total Employees:</strong> ${employees.length}</p>
+      <p><strong>Average Salary:</strong> $${averageSalary}</p>
+      <p><strong>Above $50,000:</strong> ${above50k}</p>
+      <p><strong>Below or equal $50,000:</strong> ${below50k}</p>
+      <p><strong>High Earners (>$80,000):</strong> Highlighted in green</p>
+    `;
+  </script>
+
+</body>
+</html>

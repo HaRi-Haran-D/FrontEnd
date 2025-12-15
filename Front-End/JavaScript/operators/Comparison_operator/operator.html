@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // == - double equal to
+        let num = 10;
+        let str = "10";
+        document.write(num == str);  //--> true (because of liberal comparision, it converts string into integer)
+
+        // === - Triple equal to
+        let num1 = 10;
+        let str1 = "10";
+        console.log(num1 === str1)  //--> false (now strict comparison have been applied no conversion have been took place)
+
+        // != - not equal to
+        let num2 = 5;
+        let str2 = "5";
+        console.log(num2 != str2);  //--> true (because of liberal comparision, it converts string into integer)
+
+        // !== - Triple equal to
+        let num3 = 5;
+        let str3 = "5";
+        console.log(num1 !== str1)  //--> false (now strict comparison have been applied no conversion have been took place)
+
+        // > - Greater than
+        let a = 10;
+        let b = 7;
+        document.write(a > b); //--> true (because a is greater than b)
+        
+        // >= - Greater than or equal to(either one condition is true it is true)
+        let mark1 = 60;
+        let mark2 = 70;
+        document.write(mark1 >= mark2);     //--> false(because mark1 is not greater or equal to mark2)
+
+        // or
+        let mark3 = 80;
+        let mark4 = 80;
+        document.write(mark1 >= mark2);     //--> true(because mark3 is equal to mark4)
+
+        // < - lesser than
+        let c = 10;
+        let d = 7;
+        document.write(c < d); //--> false (because c is greater than b)
+        
+        // >= - Greater than or equal to(either one condition is true it is true)
+        let mark5 = 60;
+        let mark6 = 70;
+        document.write(mark5 <= mark6);     //--> true(because mark5 is not lesser than or equal to mark6)
+
+        // or
+        let mark7 = 80;
+        let mark8 = 80;
+        document.write(mark7 <= mark8);     //--> true(because mark7 is equal to mark8)
+    </script>
+</body>
+</html>

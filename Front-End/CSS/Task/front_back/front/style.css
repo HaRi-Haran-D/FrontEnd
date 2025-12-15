@@ -1,0 +1,144 @@
+*{
+    background-color: #D9EAFD;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: large;
+}
+h1 {
+    background-color: #FF6500;
+    color: white;
+    width: 454px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.frde {
+    background-color: #FF6500;
+    color: white;
+    width: 260px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.bade {
+    background-color: #FF6500;
+     color: white;
+    width: 256px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.strong {
+    font-weight: bolder;
+}
+.tab1 {
+    border: 1px solid black;
+    width: 17%;
+    border-collapse: collapse;
+}
+.tab2 {
+    border: 1px solid black;
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 3px;
+}
+.frontdev h2 {
+    background-color: #FF6500;
+     color: white;
+    width: 284px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.frontskill h3 {
+    background-color: #FF6500;
+     color: white;
+    width: 364px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.enddev h2 {
+    background-color: #FF6500;
+     color: white;
+    width: 280px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.endskill h3 {
+    background-color: #FF6500;
+     color: white;
+    width: 362px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.carrer h2 {
+    background-color: #FF6500;
+     color: white;
+    width: 374px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.opp{
+    background-color: #FF6500;
+     color: white;
+    width: 206px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.learn {
+    background-color: #FF6500;
+     color: white;
+    width: 168px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.salary {
+    background-color: #FF6500;
+     color: white;
+    width: 245px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.satis {
+    background-color: #FF6500;
+     color: white;
+    width: 163px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.conc h2 {
+    background-color: #FF6500;
+     color: white;
+    width: 102px;
+    border-radius: 5px;
+    border-right: 30px;
+    padding: 3px;
+}
+.anch {
+    text-decoration: none;
+    color: #FF6500;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    display:inline-block;
+    margin: auto;
+}
+.scrt {
+    width: 100%;
+    height: 427px;
+    overflow: hidden;
+}
+iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }

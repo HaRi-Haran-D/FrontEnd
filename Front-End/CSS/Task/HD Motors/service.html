@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Service Center</title>
+        <link rel="icon" href="icon/favicon.ico" />
+    </head>
+    <body>
+        <a href="hdmoto.html">Back Home</a>
+        <fieldset style="width: 30%;">
+            <legend>Book Service</legend>
+            <form action="sucess.html">
+                <table>
+                    <tr>
+                        <td><label for="model">Bike Model</label></td>
+                        <td><input type="text" id="model" class="model"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="center">Service center:</label></td>
+                        <td>
+                            <select name="location" id="center">
+                                <option value="choose from below" selected disabled>choose from below</option>
+                                <option value="location">Ambattur</option>
+                                <option value="location">Avadi</option>
+                                <option value="location">Pallavaram</option>
+                                <option value="location">Tambaram</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="type">Service Type</label></td>
+                        <td>
+                            <select name="type" id="type">
+                                <option value="choose from below" selected disabled>choose from below</option>
+                                <option value="type">Free</option>
+                                <option value="type">Gpay</option>
+                                <option value="type">Cash</option>
+                                <option value="type">Warranty</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="date">Appointment date</label></td>
+                        <td><input type="date" id="date" class="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="kilo">Kilometers Driven:</label></td>
+                        <td><input type="number" id="kilo" class="kilo" placeholder="Distance in Km"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="details">Service Details</label></td>
+                        <td><input type="details" id="details" placeholder="Service Type"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </body>
+</html>

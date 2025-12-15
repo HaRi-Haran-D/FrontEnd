@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box{
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(202, 45, 202);
+}
+.box1{
+    background-color: chartreuse;
+}
+.box2{
+    background-color: #503c82;
+}
+.box3{
+    background-color: #9c9341;
+}
+.box4{
+    background-color: #3ca792;
+}
+.box5{
+    background-color: #150a51;
+}

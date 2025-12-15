@@ -1,0 +1,41 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.head{
+    position: fixed;
+    background-color: #130c0c;
+    display: flex;
+    height: 50px;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.anch {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 20px;
+    display:inline;
+    justify-content: center;
+}
+.anch:hover{
+    background-color: black;
+    color: white;
+}
+
+.content{
+    padding-top: 50px;
+    background: url(img/red_onepiece.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content img{
+    display: inline-block;
+}

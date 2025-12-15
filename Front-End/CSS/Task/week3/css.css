@@ -1,0 +1,24 @@
+.anch {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    display:inline;
+    justify-content: center;
+}
+h2, h3 {
+    background-color: #FF6500;
+    color: white;
+    width: auto;
+    border-radius: 5px;
+    padding: 3px;
+    display: inline-flex;
+}
+.video {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}

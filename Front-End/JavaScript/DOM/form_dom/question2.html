@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Name Live Preview</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+    </form>
+    <h2 id="namePreview">Name Preview</h2>
+
+    <script>
+        const nameInput = document.getElementById('name');
+        const namePreview = document.getElementById('namePreview');
+        nameInput.addEventListener('input', () => {
+            namePreview.textContent = nameInput.value || 'Name Preview';
+        });
+    </script>
+</body>
+</html>

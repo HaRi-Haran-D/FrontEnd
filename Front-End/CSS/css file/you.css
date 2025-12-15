@@ -1,0 +1,247 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* header's child div*/
+
+.main {
+    background-color: #ffffff;
+    height: 80px;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    width: 100vw;
+}
+
+/* menu bar */
+
+.menu_logo {
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 10px;
+}
+.menu_logo img{
+    padding-left: 0.5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* youtube logo */
+
+.youtube_logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+/* search bar */
+
+.search_bar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 0px 0px 90px;
+}
+.search_bar input{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 490px;
+    height: 30px;
+    padding-left: 10px;
+}
+.srch_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    width: 60px;
+    height: 32px;
+    padding: 2px 2px 2px 0px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.srch_logo img{
+    padding-left: 12px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* mic logo */
+
+.mic_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    width: 30px;
+    height: 30px;
+    padding: 2px 2px 2px 0px;
+    border-radius: 30px;
+    margin: 0px 0px 0px 50px;
+}
+.mic_logo img{
+    padding-left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* add logo and create bar */
+
+.plus_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 0px 0px 0px 5px;
+    margin: 0px 0px 0px 100px;
+}
+.plus_logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.create input{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 50px;
+    height: 24px;
+    border-color: #ccc;
+}
+
+/* bell icon/notificatio bar */
+
+.bell_icon{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #ccc;
+    width: 30px;
+    height: 30px;
+    padding: 2px 2px 2px 0px;
+    border-radius: 30px;
+    margin: 0px 0px 0px 70px;
+}
+.bell_icon img{
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+}
+
+/* user icon/ profile */
+
+.user_icon{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px 2px 2px 0px;
+    border-radius: 30px;
+    margin: 0px 0px 0px 50px;
+}
+.user_icon img{
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+}
+.suggestion{
+    padding: 5px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.suggest{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: auto;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 10px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+.suggest:hover{
+    background-color: #ddd;
+}
+.suggest_all{
+    background-color: #606060;
+    color:#ffffff;
+    border-color: #606060;
+    border-radius: 10px;
+}
+.video1{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+.video1 video{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 30px 10px 30px;
+}
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+}
+.heading a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.video2{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+.video2 video{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}
+.video3{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+.video3 video{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <input type="text" placeholder="Name" id="name">
+            <input type="password" id="password" placeholder="Password">
+            <input type="email" id="email" placeholder="Email">
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <script>
+        const form = document.querySelector('form');
+        const nameInput = document.getElementById('name').value;
+        const passwordInput = document.getElementById('password').value;
+        const emailInput = document.getElementById('email').value;
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const obj = {name: nameInput, password: passwordInput, email: emailInput}
+            console.log(obj);
+            // const changedata = JSON.stringify(obj);
+
+            // localStorage.setItem('formdata', changedata)
+            
+            // localStorage.setItem('name', nameInput.value); // --> to store data in local storage
+            // localStorage.getItem('name'); // --> to get data from local storage
+            // JSON.parse(); --> change json string to js object - need to use js process
+            // JSON.stringify(); --> change js object to json string.
+        });
+    </script>
+</body>
+</html>

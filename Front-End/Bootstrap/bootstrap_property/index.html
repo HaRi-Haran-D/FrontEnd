@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap 5 Properties Applied</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-bootstrap"></i> Bootstrap Demo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Components</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cards</a></li>
+              <li><a class="dropdown-item" href="#">Alerts</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button class="btn btn-warning ms-lg-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Modal</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Typography -->
+    <section class="mb-5">
+      <h1 class="display-4 text-primary">Typography</h1>
+      <p class="lead">Use classes like <code>.display-4</code>, <code>.lead</code>, and text utilities to style text.</p>
+      <p class="text-muted">This is example muted text using <code>.text-muted</code>.</p>
+    </section>
+
+    <!-- Color and Background -->
+    <section class="mb-5">
+      <h2 class="text-success">Colors and Background</h2>
+      <p class="bg-warning p-3 text-dark rounded">Yellow background with dark text, padding and rounded corners.</p>
+    </section>
+
+    <!-- Spacing -->
+    <section class="mb-5">
+      <h2>Spacing</h2>
+      <div class="p-4 mb-3 bg-light border border-info rounded">Padding (p-4) and margin-bottom (mb-3) example.</div>
+    </section>
+
+    <!-- Borders and Radius -->
+    <section class="mb-5">
+      <h2>Borders and Rounded Corners</h2>
+      <div class="border border-primary rounded p-3 mb-2">Primary border and rounded corners.</div>
+      <div class="border border-danger rounded-pill p-2">Danger border with pill-shaped corners.</div>
+    </section>
+
+    <!-- Shadows -->
+    <section class="mb-5">
+      <h2>Box Shadows</h2>
+      <div class="shadow p-3 mb-2 bg-white rounded">Default shadow</div>
+      <div class="shadow-lg p-3 bg-white rounded">Large shadow</div>
+    </section>
+
+    <!-- Grid and Flex -->
+    <section class="mb-5">
+      <h2>Grid and Flex</h2>
+      <div class="row mb-3">
+        <div class="col bg-primary text-white p-3 rounded">Column 1</div>
+        <div class="col bg-secondary text-white p-3 rounded">Column 2</div>
+      </div>
+      <div class="d-flex justify-content-between bg-light p-3 rounded">
+        <div>Flex item 1</div>
+        <div>Flex item 2</div>
+        <div>Flex item 3</div>
+      </div>
+    </section>
+
+    <!-- Images -->
+    <section class="mb-5">
+      <h2>Images</h2>
+      <img src="https://getbootstrap.com/docs/5.3/assets/img/bootstrap-icons.png" class="img-fluid rounded border border-3 border-info shadow-sm" alt="Bootstrap icons" />
+    </section>
+
+    <!-- Tables -->
+    <section class="mb-5">
+      <h2>Tables</h2>
+      <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+          <tr><th>#</th><th>Property</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Buttons</td><td><button class="btn btn-success btn-sm">Small Button</button></td></tr>
+          <tr><td>2</td><td>Badges</td><td><span class="badge bg-danger">Danger Badge</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form Elements -->
+    <section class="mb-5">
+      <h2>Form Elements</h2>
+      <form>
+        <div class="mb-3">
+          <input type="text" placeholder="Text input" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <select class="form-select">
+            <option selected>Choose...</option>
+            <option value="1">Option one</option>
+            <option value="2">Option two</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit <i class="bi bi-send"></i></button>
+      </form>
+    </section>
+
+    <!-- Cards -->
+    <section class="mb-5">
+      <h2>Cards</h2>
+      <div class="card shadow-sm border border-info" style="width: 18rem;">
+        <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="Card Image" />
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">Example card with image, border, and shadow.</p>
+          <button class="btn btn-info" data-bs-toggle="tooltip" title="Info Button">Info <i class="bi bi-info-circle"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alerts -->
+    <section class="mb-5">
+      <h2>Alerts</h2>
+      <div class="alert alert-success">Success alert example</div>
+      <div class="alert alert-danger">Danger alert example</div>
+    </section>
+
+    <!-- Carousel -->
+    <section class="mb-5">
+      <h2>Carousel</h2>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="https://via.placeholder.com/800x200?text=First" class="d-block w-100" alt="First slide" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/800x200?text=Second" class="d-block w-100" alt="Second slide" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Spinners & Toaster -->
+    <section class="mb-5">
+      <h2>Spinners & Toast</h2>
+      <div class="d-flex gap-3 align-items-center">
+        <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+        <button id="showToast" class="btn btn-secondary">Show Toast</button>
+      </div>
+      <div class="toast position-fixed bottom-0 end-0 p-3" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Bootstrap</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">This is a toast message.</div>
+      </div>
+    </section>
+
+    <!-- Tooltip -->
+    <section class="mb-5">
+      <h2>Tooltip</h2>
+      <button class="btn btn-dark" data-bs-toggle="tooltip" title="Tooltip text example">Hover me</button>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Example Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            This is a modal using Bootstrap 5 components.
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+
+    var toastTrigger = document.getElementById('showToast');
+    var toastLiveExample = document.getElementById('liveToast');
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample);
+      toast.show();
+    });
+  </script>
+</body> 
+</html>

@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.788);
+}
+.head{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+}
+.img{
+    padding-top: 60px;
+    background-image: linear-gradient(to left,rgba(51, 114, 232, 0.55),65%, rgba(46, 45, 53, 1)), url("../img/mt15bg.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mt{
+    height: 650px;
+}
+.btn{
+    padding: 10px;
+    width: 150px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid rgba(255, 245, 245, 0.395);
+    margin: 20px;
+}

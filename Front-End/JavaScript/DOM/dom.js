@@ -4,14 +4,14 @@ const btn = document.getElementById("btn")
 let added = false;
 btn.addEventListener('click',()=>{
     if(!added){
-        card.style.backgroundColor = "green"
+        card.style.backgroundColor = "yellow"
         btn.innerText = "Added to cart"
         btn.style.backgroundColor= "green"
         added = true
     }else{
-        card.style.backgroundColor = "yellowgreen"
+        card.style.backgroundColor = "red"
         btn.innerText = "Add to cart"
-        btn.style.backgroundColor= "chocolate"
+        btn.style.backgroundColor= "blue"
         added = false
     }
 })

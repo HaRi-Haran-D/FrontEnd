@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        console.log(land(1800,900))
+        function land(width,height){
+            // if(width>height){
+            //     return true
+            // }else{
+            //     return false
+            // }
+
+            //or
+            return(width > height)
+        }
+
+        const output = fizzBuzz('30')
+        function fizzBuzz(a){
+            if(typeof a !== 'number') console.log(NaN)
+            else if(a%3 ===0 && a%5 === 0) console.log("FizzBuzz")
+            else if(a%3=== 0) console.log("Fizz")
+            else if(a%5===0) console.log("Buzz")
+            else if(a%3 !==0 && a%5 !== 0)console.log(a)
+        }
+
+        // const output = fizzBuzz(15)
+        // console.log(output)
+
+        // function fizzBuzz(input){
+        //     if(typeof input !== 'number')
+        //         return 'Not a Number'
+
+        //     if((input % 3 === 0)&&(input % 5 === 0))
+        //         return 'FizzBuzz'
+
+        //     if(input % 3 === 0)
+        //         return 'Fizz'
+
+        //     if(input % 5 === 0)
+        //     return 'Buzz'
+
+        //     return input  
+        // }
+
+
+        checkSpeed(70)
+
+        function checkSpeed(speed){
+            const limit = 70
+            const point = 5
+            if(speed < limit + point)
+                console.log('OK')
+
+            else{
+                const points = Math.floor((speed - limit)/point)
+                if(points >= 12)
+                    console.log('License Suspended')
+                else
+                    console.log('Points', points)
+            }
+        }
+
+
+        // const num = numbers(10)
+        // function numbers(a){
+        //     const b = "Odd"
+        //     const c = "Even"
+        //     for(i=1;i<=a;i++){
+        //         if(i%2 === 0) console.log(i,c)
+        //         else console.log(i,b)
+        //     }
+        // }
+
+
+      const movie = {
+        title: "Leo",
+        director: "Lokesh",
+        actor: "Vijay",
+        year:2024,
+        collection:300
+      }
+
+      func(movie)
+      function func(obj){
+        for(let key in obj)
+            if(typeof obj[key] === 'string')
+        console.log(key, obj[key])
+      }
+
+        
+        function numbers(a){
+            let b = 0
+            for(let i=1;i<=a;i++)
+                if(i%3 === 0 || i%5 === 0) b+=i
+                 return b
+        }
+        console.log(numbers(10))
+
+        // row(7)
+        // function row(rows){
+        //     for(let row=1;row<=rows;row++){
+        //         let b = ""
+        //         for(let i = 0;i< row; i++)
+        //         b +='*'
+        //         console.log(b)
+        //     }
+                
+        // }
+
+
+        // prime(10)
+
+        // function prime(b){
+        //     for(let i = 2; i<= b; i++){
+        //         let isPrime = true
+        //         for(let fact = 2;fact< i; fact++){
+        //             if(i%fact === 0){
+        //                 isPrime = false;
+        //                 break;
+        //             }
+        //         }
+        //         if(isPrime) console.log(i)
+        //     }
+        // }
+
+        prime(20)
+
+        function prime(b){
+            for(let i = 2; i<= b; i++)
+            if(isPrime(i)) console.log(i)
+        }
+
+        function isPrime(i){
+            for(let fact = 2;fact <i; fact++)
+                if(i % fact === 0)
+                return false
+            return true
+        }
+    </script>
+</body>
+</html>

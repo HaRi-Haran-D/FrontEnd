@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function sum(a,b){
+            return a+b
+        }
+        console.log(sum(10,13))
+
+        
+        function greet(name){
+            console.log("Hello", name)
+        }
+        greet("Hari")
+
+
+        function greater(a,b){
+            if(a>b){
+                console.log(a)
+            }
+            else{
+                console.log(b)
+            }
+        }
+        greater(30,20)
+        
+
+        let num = max(20,30)
+        console.log(num)
+        function max(a,b){
+            if(a>b) return a;
+            //else 
+            return b;
+        }
+
+        let numb = max(40,30)
+        console.log(numb)
+        function max(a,b){
+            return (a > b) ? a:b;
+        }
+
+        // Truthy value
+        // False values - null, undefined, false, "", 0, NaN
+        const active = true
+        if(active) console.log('Hello D')
+
+        function truth(array){
+
+        }
+
+        const array = [0, null, undefined, '', 1, 2, 3]
+
+        console.log(count(array))
+
+        function count(array){
+            let count = 0
+            for(let value of array)
+                if(value)
+                    count++
+                return count
+        }
+    </script>
+</body>
+</html>

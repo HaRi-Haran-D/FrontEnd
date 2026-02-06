@@ -5,3 +5,4 @@ const paragraphs = document.getElementsByTagName('p');
 console.log(mainTitle);
 console.log(highlightedItems);
 console.log(paragraphs);
+

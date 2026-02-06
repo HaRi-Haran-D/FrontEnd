@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p id="para" style="background-color: blueviolet;">Hello</p>
+            <button id="btn">Click</button>
+        </div>
+    </div>
+    <script src="js/query.js">
+        const para = document.getElementById('para')
+        const btn = document.getElementById('btn')
+        btn.addEventListener('click',()=>{
+            if (para.style.backgroundColor === 'blueviolet'){
+                para.style.backgroundColor = 'red'
+            }
+            else{
+                para.style.backgroundColor = 'blueviolet'
+            }
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

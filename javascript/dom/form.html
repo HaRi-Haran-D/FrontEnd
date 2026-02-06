@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            background-color: cadetblue;
+            padding: 10px;
+            border: 0px;
+        }
+
+        #button {
+            color: red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form id="form" action="practice.html" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                    </td>
+                    <td>
+                        <input id="name" type="text" placeholder="Enter Your Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id='age' class="age" type="number" placeholder="Enter Your Age" required>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" placeholder="Submit">
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById('form')
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault()
+            const name = document.getElementById('name').value
+            const age = document.getElementById('age').value
+
+            const obj = {sname:name, sage:age}
+            const changedata = JSON.stringify(obj)
+            localStorage.setItem('udata',changedata)
+            alert('Data Saved')
+            window.location.href = 'element.html'
+            window.reset()
+        })
+    </script>
+</body>
+</html>

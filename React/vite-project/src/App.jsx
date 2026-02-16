@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import './index.css'
 import Navbar from './Navabar'
 import Course from './Course'
 import Footer from './Footer'
